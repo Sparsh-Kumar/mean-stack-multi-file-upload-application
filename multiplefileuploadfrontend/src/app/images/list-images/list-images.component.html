@@ -1,0 +1,15 @@
+
+
+<div class="container">
+    <div *ngFor="let data of imagesData" class="row">
+        <div class="col-md-4" style="margin-top: 3%;">
+            <h4 class="display-9">{{data.originalName}}</h4>
+        </div>
+        <div class="col-md-4">
+            <h4 class="display-9" style="margin-top: 10%;">{{data.size}} Bytes</h4>
+        </div>
+        <div class="col-md-4">
+            <a href="{{data.location}}" target="_blank"><img class="img-fluid uploadedImage" src="{{data.location}}"></a>
+        </div>
+    </div>
+</div>
